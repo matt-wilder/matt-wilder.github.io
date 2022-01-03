@@ -35,7 +35,7 @@ body {
   font-size: 15px;
   color: #FFFFFF;
   position: absolute;
-  transform: translateY(-200%);
+  transform: translateY(-300%);
   transition: transform 325ms ease-in;
 }
 
@@ -101,7 +101,7 @@ nav ul {
 
 nav li {
   margin-bottom: 0.5em;
-  margin-left: 1em;
+
   }
 
 
@@ -111,6 +111,7 @@ nav a {
 /*  opacity: 0; */
 /*  transition: opacity 150ms ease-in-out; */
 }
+
 
 nav a::before {
   content: '';
@@ -226,6 +227,7 @@ a:hover {
     position: relative;
   }
 
+
 nav a::before   {
   content: '';
   display: block;
@@ -238,6 +240,7 @@ nav a::before   {
   transform: scale(0,1);
   transition: transform ease-in-out 250ms;
   }
+
 
 nav a:hover::before {
   transform: scale(1,1);
@@ -277,7 +280,6 @@ nav a:hover::before {
     /* width: 500px; */
     /* background: rgba(255,155,0, 0.75)  "a" permits transparency
     /* opacity: 0.75 also sets opacity but applies to whole tag, text and all*/
-    style-type:none ;
     text-align: center;
     margin: 20px 0 80px;
     border-width: 2px;
