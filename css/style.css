@@ -1,0 +1,322 @@
+/* table of contents
+
+1. global styles
+
+2. typography
+
+3. layout
+
+*/
+
+/* =============
+   global styles
+   =============*/
+
+/* !important overrides any styling, otherwise, specificity can be calculated using specificity calculator */
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+/*  background-color: #FFFFFF; */
+  background-image: url(../img/soft-wallpaper-texture.jpg); */
+  color: #000000;
+  font-family: "Courier New", "Times New Roman", Helvetica, sans-serif; /* font stack; quotations for multi-word fonts  */
+  font-size: 20px
+}
+
+.skip-nav-link {
+  padding: .5rem 1.5rem;
+  font-family: sans-serif;
+  border-radius: 0.25rem;
+  font-family: sans-serif;
+  border-color: white;
+  background: rgba(54,54,54, 0.15);
+  font-size: 15px;
+  color: #FFFFFF;
+  position: absolute;
+  transform: translateY(-200%);
+  transition: transform 325ms ease-in;
+}
+
+.skip-nav-link:focus{
+  transform: translateY(0);
+  color: #FFFFFF;
+}
+
+
+/* =============
+   typography
+   =============*/
+
+/*  for all paragraphs */
+p {
+  color: #000;
+  font-size: 15px;
+  margin-bottom: 20px;
+  }
+
+/*  for all span */
+
+
+a:link{
+      color: #363636;
+      text-decoration: none;
+    }
+
+a:visited {
+      color: #363636;
+    }
+
+/* navigation styles */
+:root {
+  --background: rgba(0, 0, 0, 0.07)
+  }
+
+header{
+      background: var(--background);
+      text-align: center;
+      position: fixed;
+      z-index: 999;
+      width: 100%;
+        }
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: var(--background);
+  width: 100%;
+  transform: scale(1,0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+ }
+
+
+nav ul {
+  margin: 0;
+  padding: 8 0 0;
+  list-style: none;
+  }
+
+nav li {
+  margin-bottom: 0.5em;
+  margin-left: 1em;
+  }
+
+
+nav a {
+/*  text-decoration: none; */
+/*  font-size: 1.2rem; */
+/*  opacity: 0; */
+/*  transition: opacity 150ms ease-in-out; */
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: 9A210D;
+  position: absolute;
+  bottom: 0;
+/*  width: 0%; */
+  left: 0;
+  right: 0;
+  transform: scale(0,1);
+/*  transform-origin: left; */
+  transition: all ease-in-out 250ms;
+}
+
+
+
+a:hover {
+        color: #9A210D;
+        font-weight: 600px;
+    }
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+.nav-toggle-label span,
+.nav-toggle-label span:before,
+.nav-toggle-label span:after {
+  display: block;
+  background: #363636;
+  height: 2px;
+  width: 1.4em;
+  border-radius;
+  position: relative;
+  }
+
+.nav-toggle-label span:before,
+.nav-toggle-label span:after {
+    content: '';
+    position: absolute;
+  }
+
+.nav-toggle-label span:before {
+    bottom: 9px;
+  }
+
+.nav-toggle-label span:after {
+    top: 9px;
+  }
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1,1);
+  }
+
+.nav-toggle:checked ~ nav a {
+      opacity: 1;
+      transition: opacity 250ms ease-in-out 150ms;
+    }
+
+
+@media screen and (min-width: 650px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+
+  nav {
+    all: unset;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+
+  nav a {
+    opacity: 1;
+  }
+
+  nav ul {
+    display: flex;
+    }
+
+  nav a {
+    opacity: 1;
+    position: relative;
+  }
+
+nav a::before   {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #9A210D;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  right: 0;
+  transform: scale(0,1);
+  transition: transform ease-in-out 250ms;
+  }
+
+nav a:hover::before {
+  transform: scale(1,1);
+  }
+
+
+
+
+
+
+/* =============
+    layout
+   =============*/
+
+/* . for class */
+.container {        /* "wrapper" is also a common name */
+/*      width: 70%; */
+      margin: 0 auto
+           }
+
+.center {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+           }
+
+.right-down{
+            text-align: left;
+            margin: 0px -10px -2px -6px;
+                   }
+
+.box {
+    /* background: #FFFFFF; */
+    /* background-image: url(../img/wolf.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* width: 500px; */
+    /* background: rgba(255,155,0, 0.75)  "a" permits transparency
+    /* opacity: 0.75 also sets opacity but applies to whole tag, text and all*/
+    style-type:none ;
+    text-align: center;
+    margin: 20px 0 80px;
+    border-width: 2px;
+  /*  border-color: #FFFFFF;*/
+  /*  border-style: solid;*/
+    box-align: center;*/
+    /*  padding: 10px 140px 10px 10px; */
+                   }
+
+/*  # for id tags */
+#top-line{
+    font-size: 30px;
+    text-align: center;
+  /*  width: 800px; */
+  /*  height: 35px; */
+    margin-top: 35px;
+  /*  margin-right: 250px; */
+    line-height: 1.4;
+  }
+
+#second-line{
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+#bottom-part{
+    width: 500px;
+    height: 35px;
+    margin-left: 2px;
+    text-align: left;
+  /*  text-decoration: underline; */
+    font-style: oblique; /* fake italic (italic also works as does)  */
+}
+
+
+
+/* li for list items
+
+.body-text p {
+  padding: 50px
+} */
