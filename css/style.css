@@ -80,6 +80,7 @@ header{
       z-index: 999;
       width: 100%;
         }
+
 nav {
   position: absolute;
   text-align: left;
@@ -91,6 +92,26 @@ nav {
   transform-origin: top;
   transition: transform 400ms ease-in-out;
  }
+
+
+.menu-sub {
+   padding: 10px 10px 10px 0px;
+   line-height:1.6;
+   text-align: left;
+   position: absolute;
+   font-family: Arial;
+   font-size: 17px;
+   background: rgba(100,100,100);
+   display: none;
+ }
+
+.menu-sub li {
+   display: block;
+ }
+ nav li:hover .menu-sub {
+   display: block;
+ }
+
 
 
 nav ul {
@@ -129,8 +150,7 @@ nav a::before {
 }
 
 
-
-a:hover {
+a:hover  {
         color: #9A210D;
         font-weight: 600px;
     }
@@ -148,7 +168,6 @@ a:hover {
   display: flex;
   align-items: center;
 }
-
 
 .nav-toggle-label span,
 .nav-toggle-label span:before,
@@ -184,7 +203,6 @@ a:hover {
       transition: opacity 250ms ease-in-out 150ms;
     }
 
-
 @media screen and (min-width: 650px) {
   .nav-toggle-label {
     display: none;
@@ -195,7 +213,7 @@ a:hover {
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
 
-  nav {
+nav {
     all: unset;
     grid-column: 3 / 4;
     display: flex;
@@ -203,31 +221,32 @@ a:hover {
     align-items: center;
     }
 
-  nav ul {
+nav ul{
     display: flex;
     justify-content: flex-end;
   }
 
-  nav li {
+nav li {
     margin-left: 3em;
     margin-bottom: 0;
   }
 
 
-  nav div li {
+nav div li {
     margin-left: 0.5em;
     margin-bottom: 0;
   }
 
-  nav a {
+nav a {
     opacity: 1;
   }
 
-  nav ul {
+nav ul {
     display: flex;
+    position: relative
     }
 
-  nav a {
+nav a {
     opacity: 1;
     position: relative;
   }
@@ -247,9 +266,17 @@ nav a::before   {
   }
 
 
-nav a:hover::before {
+nav a.menu-main:hover::before {
   transform: scale(1,1);
   }
+
+.menu-sub a:hover{
+  text-decoration:underline;
+  }
+
+.menu-main{}
+
+
 
 
 
@@ -312,6 +339,16 @@ nav a:hover::before {
       text-align: center;
       margin-bottom: 25px;
     }
+
+
+#third-line{
+      font-size: 19px;
+      text-align:justify;
+      color: rgba(100,100,100);
+      line-height: 25px;
+      padding: 35px 150px 150px 150px;
+      margin-bottom: 25px;
+        }
 
 #bottom-part{
     width: 500px;
