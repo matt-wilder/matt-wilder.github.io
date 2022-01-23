@@ -130,6 +130,7 @@ nav ul {
 nav li {
   margin-bottom: 0.5em;
   margin-left: 1em;
+  margin-right: 1em;
   }
 
 
@@ -234,7 +235,8 @@ nav ul{
   }
 
 nav li {
-    margin-left: 3em;
+    margin-left: 1.5em;
+    margin-left: 1.5em;
     margin-bottom: 0;
   }
 
@@ -353,7 +355,7 @@ nav a.menu-main:hover::before {
       text-align:justify;
       color: rgba(100,100,100);
       line-height: 25px;
-      padding: 35px 150px 150px 150px;
+      margin: 35px 220px 220px 220px;
       margin-bottom: 25px;
         }
 
