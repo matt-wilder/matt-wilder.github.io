@@ -13,6 +13,13 @@
    =============*/
 
 /* !important overrides any styling, otherwise, specificity can be calculated using specificity calculator */
+
+br {
+   display: block;
+   margin: 5px;
+}
+
+
 html{
   scroll-behavior: smooth;
 }
