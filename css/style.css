@@ -32,10 +32,10 @@ body {
   font-size: 19px;
   text-align: justify;
   line-height: 25px;
-  margin-top: 35px;
-  margin-right: 220px;
-  margin-left: 220px;
-  margin-bottom: 55px;
+/*  margin-top: 35px; */
+/*  margin-right: 220px; */
+/*    margin-left: 220px; */
+/*    margin-bottom: 55px; */
 }
 
 
@@ -68,10 +68,7 @@ body {
    =============*/
 
 /*  for all paragraphs */
-p {
-  color: rgba(100,100,100);
-  font-size: 19px;
-  }
+
 
 /*  for all span */
 
@@ -224,7 +221,7 @@ a:hover  {
     display: none;
   }
 
-  header {
+header {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
@@ -365,12 +362,16 @@ nav a#menu-main:hover::before {
       text-align: center;
     }
 
-@media (min-width: 975px) {
+@media (min-width: 1000px) {
   #third-line{
       font-size: 19px;
       text-align:justify;
       color: rgba(100,100,100);
       line-height: 25px;
+    /*  margin-top: 35px; */
+      margin-right: 220px;
+      margin-left: 220px;
+      margin-bottom: 55px;
       margin-bottom: 55px;
         }
       }
