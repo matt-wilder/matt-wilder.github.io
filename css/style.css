@@ -15,8 +15,8 @@
 /* !important overrides any styling, otherwise, specificity can be calculated using specificity calculator */
 
 br {
-   display: block;
-   margin: 5px;
+/*   display: block; */
+/*    margin: 5px; */
 }
 
 
@@ -27,10 +27,21 @@ html{
 body {
 /*  background-color: #FFFFFF; */
   background-image: url(../img/soft-wallpaper-texture.jpg); */
-  color: #000000;
+  color: rgba(100,100,100);
   font-family: "Courier New", "Times New Roman", Helvetica, sans-serif; /* font stack; quotations for multi-word fonts  */
-  font-size: 20px
+  font-size: 19px;
+  text-align: justify;
+  line-height: 25px;
+  margin-top: 35px;
+  margin-right: 220px;
+  margin-left: 220px;
+  margin-bottom: 55px;
 }
+
+
+
+
+
 
 .skip-nav-link {
   padding: .5rem 1.5rem;
@@ -58,9 +69,8 @@ body {
 
 /*  for all paragraphs */
 p {
-  color: #000;
-  font-size: 15px;
-  margin-bottom: 20px;
+  color: rgba(100,100,100);
+  font-size: 19px;
   }
 
 /*  for all span */
@@ -118,8 +128,6 @@ nav {
  nav li:hover .menu-sub {
    display: block;
  }
-
-
 
 nav ul {
   margin: 0;
@@ -211,7 +219,7 @@ a:hover  {
       transition: opacity 250ms ease-in-out 150ms;
     }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 480px) {
   .nav-toggle-label {
     display: none;
   }
@@ -275,7 +283,7 @@ nav a::before   {
   }
 
 
-nav a.menu-main:hover::before {
+nav a#menu-main:hover::before {
   transform: scale(1,1);
   }
 
@@ -283,7 +291,7 @@ nav a.menu-main:hover::before {
   text-decoration:underline;
   }
 
-.menu-main{}
+
 
 
 
@@ -299,6 +307,7 @@ nav a.menu-main:hover::before {
 /* . for class */
 .container {        /* "wrapper" is also a common name */
 /*      width: 70%; */
+      text-align: justify;
       margin: 0 auto
            }
 
@@ -336,6 +345,7 @@ nav a.menu-main:hover::before {
 #top-line{
     font-size: 30px;
     text-align: center;
+    color: black;
   /*  width: 800px; */
   /*  height: 35px; */
     margin-top: 35px;
@@ -344,20 +354,26 @@ nav a.menu-main:hover::before {
   }
 
 #second-line{
-      font-size: 20px;
+      font-size: 23px;
+      color: black;
       text-align: center;
       margin-bottom: 25px;
     }
 
+#menu-main{
+      font-size: 21px;
+      text-align: center;
+    }
 
-#third-line{
+@media (min-width: 975px) {
+  #third-line{
       font-size: 19px;
       text-align:justify;
       color: rgba(100,100,100);
       line-height: 25px;
-      margin: 35px 220px 220px 220px;
-      margin-bottom: 25px;
+      margin-bottom: 55px;
         }
+      }
 
 #bottom-part{
     width: 500px;
