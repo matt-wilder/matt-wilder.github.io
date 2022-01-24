@@ -366,7 +366,7 @@ nav a#menu-main:hover::before {
       text-align: center;
     }
 
-@media (min-width: 940px) {
+@media (min-width: 980px) {
   #third-line{
       font-size: 19px;
       text-align:justify;
