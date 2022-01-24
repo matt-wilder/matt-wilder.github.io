@@ -84,7 +84,7 @@ a:visited {
 
 /* navigation styles */
 :root {
-  --background: rgba(0, 0, 0, 0.07)
+  --background: rgba(220, 220, 220, 0.92)
   }
 
 header{
@@ -366,7 +366,7 @@ nav a#menu-main:hover::before {
       text-align: center;
     }
 
-@media (min-width: 970px) {
+@media (min-width: 940px) {
   #third-line{
       font-size: 19px;
       text-align:justify;
