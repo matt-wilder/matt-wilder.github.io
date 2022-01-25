@@ -172,6 +172,11 @@ a:hover  {
         font-weight: 600px;
     }
 
+a:hover.material-listing  {
+            color: #9A210D;
+            font-weight: 600px;
+        }
+
 .nav-toggle {
   display: none;
 }
@@ -372,8 +377,8 @@ nav a#menu-main:hover::before {
       color: rgba(100,100,100);
       line-height: 25px;
     /*  margin-top: 35px; */
-      margin-right: 200px;
-      margin-left: 200px;
+      margin-right: 180px;
+      margin-left: 180px;
       margin-bottom: 55px;
         }
       }
@@ -391,7 +396,7 @@ nav a#menu-main:hover::before {
 #material-list{
       font-size: 17px;
       text-align:left;
-      color: rgba(100,100,100);
+      color: rgba(90,90,90);
       line-height: 25px;
     /*  margin-top: 35px; */
       margin-right: 50px;
