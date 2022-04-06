@@ -1,0 +1,33 @@
+
+body {
+  background-image: url(../img/soft-wallpaper-texture.jpg);
+}
+
+
+.mapdiv{
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+  /*  margin-top: -190px; */
+}
+
+.mapdiv path {
+  fill: #9A210D;
+  stroke: #EAEAEA;
+  stroke-width: 1px;
+  transition: opacity 0.3s  ease;
+  opacity: 0.8;
+}
+
+.mapdiv :hover {
+  fill: #9A210D;
+  opacity: 1;
+}
+
+.icon{
+}
+
+.icon:hover {
+  filter: brightness(1.1);
+}
