@@ -6,6 +6,8 @@
 
 3. layout
 
+4. political map of canada landing page
+
 */
 
 /* =============
@@ -30,7 +32,7 @@ body {
   color: rgba(100,100,100);
   font-family: "Courier New", "Times New Roman", Helvetica, sans-serif; /* font stack; quotations for multi-word fonts  */
   font-size: 19px;
-  text-align: justify;
+/*  text-align: justify; */
   line-height: 25px;
 /* margin-top: 35px; */
 /*  margin-right: 220px; */
@@ -373,7 +375,7 @@ nav a#menu-main:hover::before {
 @media (min-width: 980px) {
   #third-line{
       font-size: 19px;
-      text-align:justify;
+    /*  text-align:justify; */
       color: rgba(100,100,100);
       line-height: 25px;
     /*  margin-top: 35px; */
